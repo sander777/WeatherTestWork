@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TestWork2
 {
+    /// <summary>
+    /// This class store forecasted weather of the city
+    /// </summary>
     public class Forecast
     {
         public string day { get; set; }
@@ -13,6 +16,9 @@ namespace TestWork2
         public string wind { get; set; }
     }
 
+    /// <summary>
+    /// Class that store current and forecasted weather of the city 
+    /// </summary>
     public class WeatherData
     {
         public string temperature { get; set; }
@@ -21,6 +27,9 @@ namespace TestWork2
         public IList<Forecast> forecast { get; set; }
     }
 
+    /// <summary>
+    /// Represent error that occur during geting weather
+    /// </summary>
     public class WeatherServiceException : Exception
     {
 
